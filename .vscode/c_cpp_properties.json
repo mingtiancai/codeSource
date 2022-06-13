@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/gaoming/Qt/6.2.4/gcc_64/include",
+                "/home/gaoming/Qt/6.2.4/gcc_64/include/QtCore",
+                "/home/gaoming/Qt/6.2.4/gcc_64/include/QtWidgets"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
