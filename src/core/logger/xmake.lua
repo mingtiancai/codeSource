@@ -1,8 +1,8 @@
 target("logger")
     set_kind("shared")
-    add_headerfiles("*.h")
+    add_headerfiles("include/*.h")
     add_files(
-        "logger.cpp"
+        "src/logger.cpp"
         ) 
 
     after_build(function (target)

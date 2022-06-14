@@ -11,6 +11,6 @@ set_languages("c11")
 add_requires("boost")
 
 -- internal library 
-add_includedirs("src/core/logger")
+add_includedirs("src/core/logger/include")
 
 includes("src")
