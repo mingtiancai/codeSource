@@ -4,6 +4,7 @@ target("logger")
     add_files(
         "src/logger.cpp"
         ) 
+    add_packages("boost")
 
     after_build(function (target)
         print("target name: %s", target:name())
