@@ -1,4 +1,4 @@
-set_project("CodeSource")
+set_project("codeSource")
 
 -- set xmake minimum version
 set_xmakever("2.5.1")
