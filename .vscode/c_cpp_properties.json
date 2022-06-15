@@ -6,13 +6,14 @@
                 "${workspaceFolder}/**",
                 "/home/gaoming/Qt/6.2.4/gcc_64/include",
                 "/home/gaoming/Qt/6.2.4/gcc_64/include/QtCore",
-                "/home/gaoming/Qt/6.2.4/gcc_64/include/QtWidgets"
+                "/home/gaoming/Qt/6.2.4/gcc_64/include/QtWidgets",
+                "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++14",
-            "intelliSenseMode": "linux-gcc-x64"
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64" // trace/debug/info/warn/err/critical
         }
     ],
     "version": 4

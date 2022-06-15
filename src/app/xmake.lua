@@ -5,7 +5,8 @@ target("codeSource")
     add_files("src/mainwindow.ui")
     -- add files with Q_OBJECT meta (only for qt.moc)
     add_files("src/mainwindow.h")
-
+    add_deps("logger")
+    add_packages("spdlog")
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
 --
