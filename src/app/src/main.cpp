@@ -1,5 +1,8 @@
+#include <string>
+
 #include "mainwindow.h"
 #include <QApplication>
+#include "logger.h"
 
 int main(int argc, char *argv[])
 {
