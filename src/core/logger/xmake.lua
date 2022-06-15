@@ -4,8 +4,7 @@ target("logger")
     add_files(
         "src/logger.cpp"
         ) 
-    add_packages("boost")
-
+    add_packages("spdlog")
     after_build(function (target)
         print("target name: %s", target:name())
         os.exec("echo %s", target:targetfile())

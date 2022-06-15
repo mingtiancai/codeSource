@@ -1,1 +1,6 @@
 [
+{
+  "directory": "/home/gaoming/projects/codeSource",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/logger/linux/x86_64/release/src/core/logger/src/logger.cpp.o", "src/core/logger/src/logger.cpp"],
+  "file": "src/core/logger/src/logger.cpp"
+}

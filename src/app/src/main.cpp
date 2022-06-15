@@ -4,7 +4,9 @@
 
 int main(int argc, char *argv[])
 {
-    loggerPrint();
+    core::Logger log;
+    log.run();
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
