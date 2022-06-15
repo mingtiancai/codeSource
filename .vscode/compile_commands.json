@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/gaoming/projects/codeSource",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/logger/linux/x86_64/release/src/core/logger/src/logger.cpp.o", "src/core/logger/src/logger.cpp"],
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/logger/linux/x86_64/debug/src/core/logger/src/logger.cpp.o", "src/core/logger/src/logger.cpp"],
   "file": "src/core/logger/src/logger.cpp"
+},
+{
+  "directory": "/home/gaoming/projects/codeSource",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/mainwindow.cpp.o", "src/app/src/mainwindow.cpp"],
+  "file": "src/app/src/mainwindow.cpp"
+},
+{
+  "directory": "/home/gaoming/projects/codeSource",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/main.cpp.o", "src/app/src/main.cpp"],
+  "file": "src/app/src/main.cpp"
 }

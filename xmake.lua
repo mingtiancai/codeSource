@@ -46,7 +46,6 @@ add_requires("boost", {configs = {
     atomic = true,
     shared = true}})
 
-add_requires("log4cplus")
 add_requires("spdlog")
 
 -- internal library 
