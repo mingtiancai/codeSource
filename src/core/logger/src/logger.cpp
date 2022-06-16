@@ -10,6 +10,14 @@ namespace core
 {
     Logger::Logger()
     {
+        loggerLevelMap_ = {
+            {"trance", spdlog::level::trace},
+            {"debug", spdlog::level::debug},
+            {"info", spdlog::level::info},
+            {"warn", spdlog::level::warn},
+            {"error", spdlog::level::err},
+            {"critical", spdlog::level::critical}};
+
         try
         {
             std::chrono::seconds currentTime = std::chrono::duration_cast<std::chrono::seconds>(
@@ -25,6 +33,14 @@ namespace core
         {
             std::cout << "Log init failed: " << ex.what() << std::endl;
             exit(1);
+        }
+    }
+    void Logger::setLoggerLevel(std::string level)
+    {
+        if (loggerLevelMap_.find(level) != loggerLevelMap_.end())
+        {
+            logger_->set_level(loggerLevelMap_[level]);
+            INFOLOG("change logger level to {}", level);
         }
     }
 }

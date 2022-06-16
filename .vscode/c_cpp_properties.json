@@ -7,7 +7,8 @@
                 "/home/gaoming/Qt/6.2.4/gcc_64/include",
                 "/home/gaoming/Qt/6.2.4/gcc_64/include/QtCore",
                 "/home/gaoming/Qt/6.2.4/gcc_64/include/QtWidgets",
-                "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include"
+                "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include",
+                "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
