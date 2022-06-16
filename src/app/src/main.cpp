@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
     if (config.hasValue("loggerLevel"))
         core::Logger::getInstance()->setLoggerLevel(config.getValue("loggerLevel"));
 
+    QCoreApplication::addLibraryPath(QStringLiteral("."));
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
