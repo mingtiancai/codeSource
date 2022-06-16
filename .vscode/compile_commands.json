@@ -1,10 +1,5 @@
 [{
         "directory": "/home/gaoming/projects/codeSource",
-        "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/config/linux/x86_64/debug/src/core/config/src/config.cpp.o", "src/core/config/src/config.cpp"],
-        "file": "src/core/config/src/config.cpp"
-    },
-    {
-        "directory": "/home/gaoming/projects/codeSource",
         "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-o", "build/.objs/logger/linux/x86_64/debug/src/core/logger/src/logger.cpp.o", "src/core/logger/src/logger.cpp"],
         "file": "src/core/logger/src/logger.cpp"
     },
