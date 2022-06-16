@@ -47,8 +47,10 @@ add_requires("boost", {configs = {
     shared = true}})
 
 add_requires("spdlog")
+add_requires("nlohmann_json")
 
 -- internal library 
 add_includedirs("src/core/logger/include")
+add_includedirs("src/core/config/include")
 
 includes("src")

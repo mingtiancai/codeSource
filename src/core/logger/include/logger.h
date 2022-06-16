@@ -2,6 +2,7 @@
 #define LOGGER_H
 
 #include <memory>
+#include <map>
 #include <spdlog/logger.h>
 
 #define SPDLOG_BASE(logger, level, ...) (logger)->log(spdlog::source_loc{__FILE__, __LINE__, __func__}, level, __VA_ARGS__)
@@ -34,8 +35,11 @@ namespace core
             return logger_;
         }
 
+        void setLoggerLevel(std::string level);
+
     private:
         std::shared_ptr<spdlog::logger> logger_;
+        std::map<std::string, spdlog::level::level_enum> loggerLevelMap_;
     };
 }
 
