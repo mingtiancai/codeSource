@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
         core::Logger::getInstance()->setLoggerLevel(config.getValue("loggerLevel"));
 
     QCoreApplication::addLibraryPath(QStringLiteral("."));
+    QApplication::setApplicationName(QStringLiteral("codeSource"));
 
     QApplication a(argc, argv);
     MainWindow w;
