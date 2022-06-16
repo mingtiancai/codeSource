@@ -1,16 +1,16 @@
-[
-{
-  "directory": "/home/gaoming/projects/codeSource",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/config/linux/x86_64/debug/src/core/config/src/config.cpp.o", "src/core/config/src/config.cpp"],
-  "file": "src/core/config/src/config.cpp"
-},
-{
-  "directory": "/home/gaoming/projects/codeSource",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/mainwindow.cpp.o", "src/app/src/mainwindow.cpp"],
-  "file": "src/app/src/mainwindow.cpp"
-},
-{
-  "directory": "/home/gaoming/projects/codeSource",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/main.cpp.o", "src/app/src/main.cpp"],
-  "file": "src/app/src/main.cpp"
-}
+[{
+        "directory": "/home/gaoming/projects/codeSource",
+        "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fPIC", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/config/linux/x86_64/debug/src/core/config/src/config.cpp.o", "src/core/config/src/config.cpp"],
+        "file": "src/core/config/src/config.cpp"
+    },
+    {
+        "directory": "/home/gaoming/projects/codeSource",
+        "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/mainwindow.cpp.o", "src/app/src/mainwindow.cpp"],
+        "file": "src/app/src/mainwindow.cpp"
+    },
+    {
+        "directory": "/home/gaoming/projects/codeSource",
+        "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Isrc/core/logger/include", "-Isrc/core/config/include", "-I/home/gaoming/projects/codeSource/build/.gens/codeSource/linux/x86_64/debug/rules/qt/ui", "-I", "/home/gaoming/.xmake/packages/s/spdlog/v1.10.0/1902f227aa5444989a19c0e0928690f2/include", "-I", "/home/gaoming/.xmake/packages/n/nlohmann_json/v3.10.5/754372cb9f87426db97df4617e17361b/include", "-o", "build/.objs/codeSource/linux/x86_64/debug/src/app/src/main.cpp.o", "src/app/src/main.cpp"],
+        "file": "src/app/src/main.cpp"
+    }
+]
