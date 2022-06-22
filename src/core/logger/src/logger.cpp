@@ -2,6 +2,7 @@
 
 #include <chrono>
 #include <iostream>
+#include <stdexcept>
 #include <unordered_map>
 
 #include "spdlog/spdlog.h"
@@ -33,27 +34,56 @@ namespace core
             }
         } // unnamed namespace
 
+        Level::Level(level_enum level)
+        {
+            operator =(
+                level == spdlog::level::trace ? trace :
+                level == spdlog::level::debug ? debug :
+                level == spdlog::level::info ? info :
+                level == spdlog::level::warn ? warn :
+                level == spdlog::level::err ? error :
+                level == spdlog::level::critical ? critical :
+                throw std::invalid_argument(
+                    std::string("unrecognized spdlog::level::level_enum ") +
+                    std::to_string(level))
+            );
+        }
+
+        Level::Level(const std::string &level)
+        {
+            auto c = level.size() ? level[0] : '\0';
+            operator =(
+                c == 't' ? trace :
+                c == 'd' ? debug :
+                c == 'i' ? info :
+                c == 'w' ? warn :
+                c == 'e' ? error :
+                c == 'c' ? critical :
+                throw std::invalid_argument(
+                    std::string("unrecognized core::logger::Level string '") +
+                    level +
+                    '\'')
+            );
+        }
+
+        const std::string Level::traceStr("trace");
+        const std::string Level::debugStr("debug");
+        const std::string Level::infoStr("info");
+        const std::string Level::warnStr("warn");
+        const std::string Level::errorStr("error");
+        const std::string Level::criticalStr("critical");
+
+        const Level Level::trace(spdlog::level::trace, traceStr);
+        const Level Level::debug(spdlog::level::debug, debugStr);
+        const Level Level::info(spdlog::level::info, infoStr);
+        const Level Level::warn(spdlog::level::warn, warnStr);
+        const Level Level::error(spdlog::level::err, errorStr);
+        const Level Level::critical(spdlog::level::critical, criticalStr);
+
         spdlog::logger &get()
         {
             static std::shared_ptr<spdlog::logger> ptr = construct();
             return *ptr;
-        }
-
-        void setLevel(const std::string &level)
-        {
-            static const std::unordered_map<std::string, spdlog::level::level_enum> map = {
-                {"trace", spdlog::level::trace},
-                {"debug", spdlog::level::debug},
-                {"info", spdlog::level::info},
-                {"warn", spdlog::level::warn},
-                {"error", spdlog::level::err},
-                {"critical", spdlog::level::critical}};
-            auto it = map.find(level);
-            if (it != map.end())
-            {
-                get().set_level(it->second);
-                INFOLOG("change logger level to {}", level);
-            }
         }
 
     } // namespace logger
