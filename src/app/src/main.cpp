@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
     core::Config config("./config/config.json");
     if (config.hasValue("loggerLevel"))
-        core::logger::setLevel(config.getValue("loggerLevel"));
+        core::logger::get().set_level(core::logger::Level(config.getValue("loggerLevel")));
 
     QCoreApplication::addLibraryPath(QStringLiteral("."));
     QApplication::setApplicationName(QStringLiteral("codeSource"));
