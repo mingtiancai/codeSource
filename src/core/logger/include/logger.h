@@ -35,15 +35,15 @@ namespace core
                 return *levelStr;
             }
 
-            friend bool operator ==(Level a, Level b) noexcept
+            friend bool operator==(Level a, Level b) noexcept
             {
                 return a.levelEnum == b.levelEnum;
             }
-            friend bool operator !=(Level a, Level b) noexcept
+            friend bool operator!=(Level a, Level b) noexcept
             {
                 return !(a == b);
             }
-            friend std::ostream &operator <<(std::ostream &os, Level level)
+            friend std::ostream &operator<<(std::ostream &os, Level level)
             {
                 return os << static_cast<const std::string &>(level);
             }
@@ -57,9 +57,9 @@ namespace core
 
         private:
             Level(level_enum levelEnum, const std::string &levelStr) noexcept
-                : levelEnum(levelEnum)
-                , levelStr(&levelStr)
-                {}
+                : levelEnum(levelEnum), levelStr(&levelStr)
+            {
+            }
 
             level_enum levelEnum;
             const std::string *levelStr;
